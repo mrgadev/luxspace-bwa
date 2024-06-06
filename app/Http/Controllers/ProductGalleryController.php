@@ -52,6 +52,7 @@ class ProductGalleryController extends Controller
      */
     public function store(ProductGalleryRequest $request, Product $product)
     {
+        // dd($request->all());
         $files = $request->file('files');
 
         if($request->hasFile('files')) {
